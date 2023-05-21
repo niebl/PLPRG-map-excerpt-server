@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reverse Helper</title>
+    <link rel="stylesheet" href="reverseHelper.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    crossorigin=""></script>
+  </head>
+  <body>
+	  <script defer src="reverseHelper.js"></script>
+
+    <div id="map"></div>
+
+    <label for="host">host</label>
+    <input type="text" id="host" name="host" value="localhost:8080">/
+    <input type="text" id="resource" name="resource" value="cacheArea">
+
+    <label for="lat">lat</label>
+    <input type="text" id="lat" name="lat" value="">
+    <label for="lat">lon</label>
+    <input type="text" id="lon" name="lon" value="">
+    <label for="radius">span</label>
+    <input type="text" id="span" name="span" value="125">
+    <button onclick="makeQuery()">fetch</button>
+
+    <br>
+    <label for="output">output</label>
+    <textarea id="output" name="output" rows="20" cols="80">
+    </textarea>
+
+  </body>
+</html>
